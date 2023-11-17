@@ -5,6 +5,7 @@
 package Frames;
 
 import Clases.ProductoPromocion;
+<<<<<<< HEAD
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -12,15 +13,24 @@ import javax.swing.DefaultListModel;
 import javax.swing.JFileChooser;
 import javax.swing.JList;
 import javax.swing.JOptionPane;
+=======
+import java.util.ArrayList;
+import java.util.List;
+import javax.swing.DefaultListModel;
+>>>>>>> c6f1e4d840fa97ffa1359c8021c56c9b699f4fc7
 
 /**
  *
  * @author User001
  */
 public class ListaProductos extends javax.swing.JFrame {
+<<<<<<< HEAD
 DefaultListModel<ProductoPromocion> listModel = new DefaultListModel();
 
     private File selectedFile; 
+=======
+
+>>>>>>> c6f1e4d840fa97ffa1359c8021c56c9b699f4fc7
     public CategoriaProductos padre;
     public String CategoriaSeleccionada;
     public String nickNameMicro;
@@ -53,8 +63,11 @@ DefaultListModel<ProductoPromocion> listModel = new DefaultListModel();
         bttAgregarProducto = new javax.swing.JButton();
         bttEliminarProducto = new javax.swing.JButton();
         bttVolverAPR = new javax.swing.JButton();
+<<<<<<< HEAD
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
+=======
+>>>>>>> c6f1e4d840fa97ffa1359c8021c56c9b699f4fc7
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -105,6 +118,7 @@ DefaultListModel<ProductoPromocion> listModel = new DefaultListModel();
             }
         });
 
+<<<<<<< HEAD
         jButton1.setText("Importar");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -120,6 +134,8 @@ DefaultListModel<ProductoPromocion> listModel = new DefaultListModel();
             }
         });
 
+=======
+>>>>>>> c6f1e4d840fa97ffa1359c8021c56c9b699f4fc7
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -140,6 +156,7 @@ DefaultListModel<ProductoPromocion> listModel = new DefaultListModel();
                             .addComponent(bttEliminarProducto, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addGap(0, 30, Short.MAX_VALUE))
             .addGroup(jPanel1Layout.createSequentialGroup()
+<<<<<<< HEAD
                 .addGap(43, 43, 43)
                 .addComponent(bttAgregarProducto, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
@@ -151,6 +168,16 @@ DefaultListModel<ProductoPromocion> listModel = new DefaultListModel();
                     .addComponent(jButton1)
                     .addComponent(jButton2))
                 .addGap(20, 20, 20))
+=======
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(43, 43, 43)
+                        .addComponent(bttAgregarProducto, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(217, 217, 217)
+                        .addComponent(bttVolverAPR, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+>>>>>>> c6f1e4d840fa97ffa1359c8021c56c9b699f4fc7
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -166,6 +193,7 @@ DefaultListModel<ProductoPromocion> listModel = new DefaultListModel();
                     .addComponent(bttAgregarProducto, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(bttEliminarProducto, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+<<<<<<< HEAD
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(bttVolverAPR, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel1Layout.createSequentialGroup()
@@ -173,6 +201,10 @@ DefaultListModel<ProductoPromocion> listModel = new DefaultListModel();
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jButton2)))
                 .addContainerGap(15, Short.MAX_VALUE))
+=======
+                .addComponent(bttVolverAPR, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(24, Short.MAX_VALUE))
+>>>>>>> c6f1e4d840fa97ffa1359c8021c56c9b699f4fc7
         );
 
         getContentPane().add(jPanel1, java.awt.BorderLayout.CENTER);
@@ -195,6 +227,7 @@ DefaultListModel<ProductoPromocion> listModel = new DefaultListModel();
         this.dispose();
     }//GEN-LAST:event_bttVolverAPRActionPerformed
 
+<<<<<<< HEAD
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         JFileChooser fileChooser = new JFileChooser();
     fileChooser.showOpenDialog(this);
@@ -259,6 +292,8 @@ private void importarDatos() {
                                
     }//GEN-LAST:event_jButton2ActionPerformed
 
+=======
+>>>>>>> c6f1e4d840fa97ffa1359c8021c56c9b699f4fc7
      public void agregarProductoALista(String NombreProducto, String DescripcionProducto, String PrecioProducto) {
     ProductoPromocion nuevaPromo = new ProductoPromocion(NombreProducto, DescripcionProducto, PrecioProducto);
     promocion.add(nuevaPromo);
@@ -301,8 +336,11 @@ private void importarDatos() {
     private javax.swing.JButton bttAgregarProducto;
     private javax.swing.JButton bttEliminarProducto;
     private javax.swing.JButton bttVolverAPR;
+<<<<<<< HEAD
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
+=======
+>>>>>>> c6f1e4d840fa97ffa1359c8021c56c9b699f4fc7
     private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
